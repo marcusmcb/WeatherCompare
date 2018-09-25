@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Places To Visit & Things To Do</title>
+    <!--CSS Reset-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <!--Favicon-->
+    <link rel="shortcut icon" type="image/png" href="assets/images/sun-512.png">
+    <!--Bootstrap CSS-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+    <!--Balloon CSS Libary-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />     
+     
+</head>
+
+<body class="bg">
+
+    <!-- main page header/title area -->
+
+    <div class="container">
+        <div class="row" style="justify-content: center">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1>WeatherCompare</h1>
+                    <p class="lead">Find some interesting places to go while you're away.</p>
+                </div>
+            </div>       
+
+    <!--location search form-->
+
+        <div class="container">
+            <div class="form-row">
+                <div class="form-group col-sm text-center">
+                    <div class="card text-center" id="input-card">
+                        <div class="card-body">
+                            Where would you like to go?
+                        </div>
+                        <input class="form-control, foursquare-input" id="form-body" type="text" placeholder="Search restaurants, parks, attractions, etc in or near your destination.">
+                    </div>
+                    <button data-balloon="Get your search results." data-balloon-pos="down" id="search-btn" type="submit" class="btn btn-primary mb-2">Search</button>
+                </div>
+            </div>
+        </div>
+
+        <!--location search results-->
+
+        <div class="container">
+            <div id="location-holder" class="row justify-content-around">
+
+            </div>
+        </div>
+
+        <!--reset button-->
+        
+        <div class="container justify-content-center">
+            <div class="form-group col-sm text-center">
+                <button data-balloon="Go back." data-balloon-pos="up" id="compare-btn" type="button" class="btn btn-primary mr-5">Back To Comparison</button>
+                <button data-balloon="Start over." data-balloon-pos="up" id="new-comp-btn" type="button" class="btn btn-primary">Create New Comparison</button>
+            </div>  
+                <button data-balloon="Log out." data-balloon-pos="down" type="button" class="btn btn-primary log-out-btn" onclick="LogOut()">Log Out</button>
+        </div>
+    </div>
+
+    <!--jQuery, Firebase & JS links-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>t>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase-auth.js"></script>
+    <script src="./assets/javascript/javascript.js"></script>
+    <script src="./assets/javascript/combine.js"></script>
+    <script src="./assets/javascript/firebase.js"></script>
+    <script src="./assets/javascript/foursquare.js"></script>
+
+</body>
+</html>

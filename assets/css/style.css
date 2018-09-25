@@ -1,0 +1,94 @@
+.bg {
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.jumbotron-fluid {
+  display: flex;
+  text-align: center;
+  height: 150px;
+  background-color: transparent;
+  color: white;
+  padding-top: 30px;
+}
+
+#input-card {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-primary {
+  margin-top: 30px;
+}
+
+#form-body  {
+  width: 60%;
+  margin-left: 20%;
+}
+
+#startDate,
+#endDate    {
+  width: 30%;
+  margin-left: 40%;
+}
+
+.card-img-top {
+  width: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#card-city {
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  color: rgb(141, 188, 204);
+}
+
+.modal {
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 1;
+  padding-top: 100px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+#sign-up-container, #login-container {
+  width: 100%;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+}
+
+.close, .close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.log-out-btn {
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+
+}

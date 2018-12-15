@@ -6,6 +6,8 @@ WeatherCompare is a simple travel and weather app that allows you to compare the
 
 ### Link to the app:
 
+https://marcusmcb.github.io/WeatherCompare/
+
 ### Using WeatherCompare
 
 Using the app is very straight-forward.  After signing in, simply enter your current location as well as your destination and specify the dates on which you will be travelling.  WeatherCompare will then take the information that you've submitted and run a comparison to between the two locations for the dates specified.  In the results you will see a comparison between your two locations:
